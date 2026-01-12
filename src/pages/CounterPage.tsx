@@ -4,13 +4,13 @@ function CounterPage() {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
+    <div className="flex h-screen flex-col items-center justify-center">
       <h1 className="text-2xl font-bold">Counter</h1>
       <p className="text-4xl font-bold">Count: {count}</p>
-      <button onClick={() => setCount(count - 1)} className="bg-red-500 text-white p-2 rounded-md cursor-pointer">
+      <button onClick={() => setCount(count - 1)} className="cursor-pointer rounded-md bg-red-500 p-2 text-white">
         Decrement
       </button>
-      <button onClick={() => setCount(count + 1)} className="text-white bg-blue-500  p-2 rounded-md cursor-pointer">
+      <button onClick={() => setCount(count + 1)} className="cursor-pointer rounded-md bg-blue-500 p-2 text-white">
         Increment
       </button>
     </div>
